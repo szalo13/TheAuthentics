@@ -830,7 +830,7 @@ if ( ! function_exists( 'the_related_posts' ) ) {
                 <?php for ($i = 0; $i < sizeof($related); $i++) {
                     while ( $related[$i]->have_posts() ) : $related[$i]->the_post(); ?>
                         <div class="owl-slide">
-          nano                <article <?php post_class('post-related post-list'); ?>>
+                          <article <?php post_class('post-related post-list'); ?>>
                             <?php if ( has_post_thumbnail() ) { ?>
                               <div class="post-thumbnail">
                                 <?php the_post_thumbnail('list'); ?>
