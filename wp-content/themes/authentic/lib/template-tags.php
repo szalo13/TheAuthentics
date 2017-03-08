@@ -805,38 +805,45 @@ if ( ! function_exists( 'the_related_posts' ) ) {
     if ($categories) {
 
       $category_ids = array();
+        $users = [ "bartosz", "mateusz", "slawek", "kamil", "krzysztof" ];
+        shuffle($users);
+        
+        $related = array();
       foreach($categories as $category) $category_ids[] = $category->term_id;
+        
+        for ($i = 0; $i < sizeof($users); $i++) {
       $related_args = array(
-        'category__in'     => $category_ids,
+        'category_name'     => $users[$i],
         'post__not_in'     => array($post_id),
-        'posts_per_page'   => 5,
+        'posts_per_page'   => 1,
         'orderby' => 'rand'
       );
-      $related = new WP_Query( $related_args );
-
-      if ( $related->have_posts() && $related->post_count >= 3) { ?>
-
+      $related[$i] = new WP_Query( $related_args );
+        }
+      if ( $related[1]->have_posts() && $related[1]->post_count >= 1) { ?>
         <div class="posts-related post-archive">
           <div class="post-archive-related">
             <h3 class="title-related" ><?php esc_html_e('You May also Like','authentic');?></h3>
 
             <div class="owl-container owl-loop" data-slides="3">
               <div class="owl-carousel">
-              <?php while ( $related->have_posts() ) : $related->the_post(); ?>
-                <div class="owl-slide">
-                  <article <?php post_class('post-related post-list'); ?>>
-                    <?php if ( has_post_thumbnail() ) { ?>
-                      <div class="post-thumbnail">
-                        <?php the_post_thumbnail('list'); ?>
-                        <?php the_read_more(); ?>
-                        <?php the_post_meta(array('reading_time', 'views'), true); ?>
-                        <a href="<?php the_permalink();?>"></a>
-                      </div>
-                    <?php } ?>
-                    <h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
-                  </article>
-                </div>
-              <?php endwhile; ?>
+                <?php for ($i = 0; $i < sizeof($related); $i++) {
+                    while ( $related[$i]->have_posts() ) : $related[$i]->the_post(); ?>
+                        <div class="owl-slide">
+          nano                <article <?php post_class('post-related post-list'); ?>>
+                            <?php if ( has_post_thumbnail() ) { ?>
+                              <div class="post-thumbnail">
+                                <?php the_post_thumbnail('list'); ?>
+                                <?php the_read_more(); ?>
+                                <?php the_post_meta(array('reading_time', 'views'), true); ?>
+                                <a href="<?php the_permalink();?>"></a>
+                              </div>
+                            <?php } ?>
+                            <h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+                          </article>
+                        </div>
+                    <?php endwhile; 
+                }?>
               </div>
               <div class="owl-dots"></div>
             </div>
