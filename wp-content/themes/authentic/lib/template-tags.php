@@ -814,6 +814,13 @@ if ( ! function_exists( 'the_related_posts' ) ) {
         for ($i = 0; $i < sizeof($users); $i++) {
       $related_args = array(
         'category_name'     => $users[$i],
+        'meta_key' => 'post_views_count',
+        'date_query'        => array(
+            array(
+                'after'     => '30 days ago',
+                'inclusive' => true,
+            ),
+        ),
         'post__not_in'     => array($post_id),
         'posts_per_page'   => 1,
         'orderby' => 'rand'
