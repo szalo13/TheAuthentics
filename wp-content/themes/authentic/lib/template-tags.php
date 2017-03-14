@@ -814,10 +814,9 @@ if ( ! function_exists( 'the_related_posts' ) ) {
         for ($i = 0; $i < sizeof($users); $i++) {
       $related_args = array(
         'category_name'     => $users[$i],
-        'meta_key' => 'post_views_count',
         'date_query'        => array(
             array(
-                'after'     => '30 days ago',
+                'after'     => '60 days ago',
                 'inclusive' => true,
             ),
         ),
