@@ -32,7 +32,7 @@ msgstr ""
 
 #: category.php:37 home.php:142 index.php:15 search.php:15
 msgid "Sorry, no results were found."
-msgstr ""
+msgstr "Niestety! U nas tego nie znajdziesz ;)"
 
 #: comments.php:17 lib/template-tags.php:495
 msgid "One comment"
@@ -425,13 +425,13 @@ msgstr ""
 #: templates/archive-list.php:53 templates/archive-masonry.php:66
 #: templates/archive-standard.php:11
 msgid "Next"
-msgstr ""
+msgstr "Następny"
 
 #: lib/assets.php:37 templates/archive-grid.php:77
 #: templates/archive-list.php:52 templates/archive-masonry.php:65
 #: templates/archive-standard.php:10
 msgid "Previous"
-msgstr ""
+msgstr "Poprzedni"
 
 #: lib/custom-fields.php:13
 msgid "Gallery"
@@ -889,7 +889,7 @@ msgstr ""
 
 #: lib/template-tags.php:519
 msgid "minute read"
-msgstr ""
+msgstr "minuty czytania"
 
 #: lib/template-tags.php:536
 msgid "views"
@@ -1031,7 +1031,7 @@ msgstr ""
 
 #: lib/theme-mods.php:720
 msgid "Search Form"
-msgstr ""
+msgstr "Szukaj"
 
 #: lib/theme-mods.php:761
 msgid "Archive Page Layout"
@@ -1408,7 +1408,7 @@ msgstr ""
 
 #: searchform.php:2
 msgid "Search for:"
-msgstr ""
+msgstr "Szukaj"
 
 #: searchform.php:4
 msgid "Enter Keyword"
@@ -1416,7 +1416,7 @@ msgstr ""
 
 #: searchform.php:6
 msgid "Search"
-msgstr ""
+msgstr "Szukaj"
 
 #. Theme Name of the plugin/theme
 msgid "Authentic"

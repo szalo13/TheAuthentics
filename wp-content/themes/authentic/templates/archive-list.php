@@ -49,8 +49,8 @@
 
   the_posts_pagination( array(
     'mid_size'  => 2,
-    'prev_text' => esc_html__( 'Previous', 'authentic' ),
-    'next_text' => esc_html__( 'Next', 'authentic' ),
+    'prev_text' => esc_html__( 'Poprzedni', 'authentic' ),
+    'next_text' => esc_html__( 'Następny', 'authentic' ),
   ) );
 
   // .post-archive

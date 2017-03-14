@@ -33,8 +33,8 @@ function authentic_assets() {
   wp_register_script( 'authentic_js', get_template_directory_uri() . $assets['js'], array(), $version, true);
 
   $translation_array = array(
-    'next' => esc_html__( 'Next', 'authentic' ),
-    'previous' => esc_html__( 'Previous', 'authentic' ),
+    'next' => esc_html__( 'Następny', 'authentic' ),
+    'previous' => esc_html__( 'Poprzedni', 'authentic' ),
   );
   wp_localize_script( 'authentic_js', 'translation', $translation_array );
 

@@ -516,7 +516,7 @@ if ( ! function_exists( 'the_post_reading_time' ) ) {
       <<?php echo $tag; ?> class="meta-reading-time">
         <?php if ( $compact == true ) { ?><i class="icon icon-clock"></i><?php } ?>
         <?php echo $reading_time;?>
-        <?php if ($compact == false ) { ?><span> <?php esc_html_e('minute read', 'authentic'); ?></span><?php } ?>
+        <?php if ($compact == false ) { ?><span> <?php esc_html_e('minuty czytania', 'authentic'); ?></span><?php } ?>
       </<?php echo $tag; ?>>
     <?php }
   }
@@ -707,7 +707,7 @@ if ( ! function_exists( 'the_read_more' ) ) {
 
     <div class="post-more">
       <a href="<?php echo $url; ?>" class="<?php echo esc_html($class); ?>">
-        <span><?php esc_html_e('View Post','authentic');?></span>
+        <span><?php esc_html_e('Sprawdzam','authentic');?></span>
         <?php if ($icon !== '') { ?>
           <span><i class="icon icon-<?php echo $icon; ?>"></i></span>
         <?php } ?>
@@ -807,10 +807,10 @@ if ( ! function_exists( 'the_related_posts' ) ) {
       $category_ids = array();
         $users = [ "bartosz", "mateusz", "slawek", "kamil", "krzysztof" ];
         shuffle($users);
-        
+
         $related = array();
       foreach($categories as $category) $category_ids[] = $category->term_id;
-        
+
         for ($i = 0; $i < sizeof($users); $i++) {
       $related_args = array(
         'category_name'     => $users[$i],
@@ -848,7 +848,7 @@ if ( ! function_exists( 'the_related_posts' ) ) {
                             <h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
                           </article>
                         </div>
-                    <?php endwhile; 
+                    <?php endwhile;
                 }?>
               </div>
               <div class="owl-dots"></div>
