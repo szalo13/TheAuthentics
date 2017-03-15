@@ -62,7 +62,7 @@
 
       if ( $module == 'widgets' && ( is_active_sidebar( 'sidebar-footer-1' ) || is_active_sidebar( 'sidebar-footer-2' ) || is_active_sidebar( 'sidebar-footer-3' ) ) ) { ?>
         <div class="footer-section">
-          <div class="container">
+          <div class="container-fluid">
             <div class="footer-widgets">
               <div class="footer-sidebars">
                 <?php if ( is_active_sidebar( 'sidebar-footer' ) ) { ?>
