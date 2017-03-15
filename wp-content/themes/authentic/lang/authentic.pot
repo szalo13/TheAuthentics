@@ -909,7 +909,7 @@ msgstr ""
 
 #: lib/template-tags.php:710
 msgid "View Post"
-msgstr ""
+msgstr "sprawdzam"
 
 #: lib/template-tags.php:729
 msgid "posts"

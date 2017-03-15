@@ -513,6 +513,7 @@ if ( ! function_exists( 'the_post_reading_time' ) ) {
       $strip_tags = strip_tags($strip_shortcodes);
       $word_count = str_word_count($strip_tags);
       $reading_time = ceil($word_count / 250); ?>
+      
       <<?php echo $tag; ?> class="meta-reading-time">
         <?php if ( $compact == true ) { ?><i class="icon icon-clock"></i><?php } ?>
         <?php echo $reading_time;?>

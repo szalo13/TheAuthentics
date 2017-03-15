@@ -3262,6 +3262,22 @@ img {
   z-index: 1;
 }
 
+.masonry-content li a,
+.masonry-content h2.entry-title a {
+    color: #fff;
+}
+
+.masonry-content li a:hover,
+.masonry-content h2.entry-title a:hover {
+  color: #aaa;
+}
+
+.masonry-content .post-excerpt {
+    max-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .post-grid .post-thumbnail .post-more .link-more,
 .post-list .post-thumbnail .post-more .link-more,
 .post-masonry .post-thumbnail .post-more .link-more {
@@ -3285,7 +3301,7 @@ img {
   opacity: 0;
   transition: all .3s ease;
   color: #eceeef;
-  border-top: 1px rgba(160, 160, 160, 0.5) solid;
+  border-top: none;
   margin: 0;
   z-index: 1;
 }
