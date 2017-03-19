@@ -443,6 +443,21 @@ Text Domain:          authentic
  * ----------------------------------------------------------------------------
  */
 
+.header-content {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  width: 100%;
+  background-color: black;
+}
+.sticky-wrapper {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+}
+
 .header-left,
 .header-right,
 .header-center {
@@ -515,6 +530,20 @@ Text Domain:          authentic
 }
 
 @media (min-width: 768px) {
+
+  .header-content {
+    position: static;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+  }
+
+  .sticky-wrapper {
+      position: static;
+      top: 100px;
+      background-color: rgba(0,0,0,0);
+      width: 100%;
+  }
+
   .header-content {
     margin-right: -15px;
     margin-left: -15px;
