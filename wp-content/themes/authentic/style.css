@@ -3327,7 +3327,8 @@ img {
 .post-thumbnail .post-meta,
 .post-featured .post-meta {
   position: absolute;
-  bottom: -10%;
+  bottom: 50%;
+  transform: translateY(-50%);
   left: 2rem;
   right: 2rem;
   padding: 1rem;
