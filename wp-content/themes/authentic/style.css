@@ -2036,6 +2036,11 @@ img {
   }
 }
 
+.post-info h5,
+.post-info h4 {
+  margin-top: 2rem;
+}
+
 .post-author {
   margin-top: 2rem;
   padding-top: 2rem;
@@ -3969,6 +3974,9 @@ img {
   border-top: 1px #eceeef solid;
 }
 
+.null-instagram-feed .instagram-size-thumbnail li {
+  width: 33%;
+}
 #wp-calendar {
   table-layout: fixed;
   width: 100%;
