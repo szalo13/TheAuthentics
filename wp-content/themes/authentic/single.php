@@ -95,17 +95,38 @@
             )); ?>
 
             <?php the_tags( '<ul class="post-tags"><li>', '</li><li>', '</li></ul>' ); ?>
-
-            <?php if (get_theme_mod('authentic_meta_author', true) == true) { ?>
-              <div class="post-author author vcard">
-                <?php echo get_avatar( get_the_author_meta('email'), '120', null, false, array('class' => 'rounded-circle') ); ?>
-                <h4 class="fn"><?php the_author_posts_link(); ?></h4>
-                <p><?php the_author_meta('description'); ?></p>
-                <?php the_author_accounts_list(); ?>
-              </div>
-            <?php } ?>
-
           </article>
+        </div>
+        <div class="main col-lg-12">
+          <?php if (get_theme_mod('authentic_meta_author', true) == true) { ?>
+
+            <div class="row post-author vcard author ">
+              <div class="col-sm-4">
+                <div class="">
+                  <h4 class="fn"><?php the_author_posts_link(); ?></h4>
+                  <?php echo get_avatar( get_the_author_meta('email'), '120', null, false, array('class' => 'rounded-circle') ); ?>
+                  <p><?php the_author_meta('description'); ?></p>
+                  <?php the_author_accounts_list(); ?>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <?php if ( is_active_sidebar( 'sidebar-post-1' ) ) { ?>
+                  <div class="sidebar-post-1">
+                    <?php dynamic_sidebar( 'sidebar-post-1' ); ?>
+                  </div>
+                <?php } ?>
+              </div>
+
+              <div class="col-lg-4">
+                <?php if ( is_active_sidebar( 'sidebar-post-2' ) ) { ?>
+                  <div class="sidebar-post-2">
+                    <?php dynamic_sidebar( 'sidebar-post-2' ); ?>
+                  </div>
+                <?php } ?>
+              </div>
+          <?php } ?>
+          </div>
         </div>
       </div>
     </div>

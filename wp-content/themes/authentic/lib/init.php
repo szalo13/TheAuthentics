@@ -95,6 +95,24 @@ function authentic_widgets_init() {
     'after_title'   => '</h5>'
   ));
 
+  register_sidebar(array(
+    'name'          => esc_html__('Post footer 1', 'authentic'),
+    'id'            => 'sidebar-post-1',
+    'before_widget' => '<div class="widget %1$s %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h5 class="title-widget">',
+    'after_title'   => '</h5>'
+  ));
+
+  register_sidebar(array(
+    'name'          => esc_html__('Post footer 2', 'authentic'),
+    'id'            => 'sidebar-post-2',
+    'before_widget' => '<div class="widget %1$s %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h5 class="title-widget">',
+    'after_title'   => '</h5>'
+  ));
+
   register_sidebars( 3, array(
     'name'          => esc_html__('Footer Sidebar %d', 'authentic'),
     'id'            => 'sidebar-footer',

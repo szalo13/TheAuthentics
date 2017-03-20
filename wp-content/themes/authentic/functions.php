@@ -27,5 +27,3 @@ $authentic_includes = array(
 foreach ($authentic_includes as $file) {
   include_once get_template_directory() . $file;
 }
-
-
