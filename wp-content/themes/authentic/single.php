@@ -38,7 +38,7 @@
     <div class="container-fluid">
       <div class="page-content">
         <?php the_sidebar('left'); ?>
-        <div class="main col-sm-11">
+        <div class="main col-sm-12">
 
           <article <?php post_class(); ?>>
 
@@ -59,6 +59,8 @@
                 </div>
               </div>
             <?php } ?>
+          </div>
+          <div class="main col-sm-11">
 
             <?php if ($featured_image_type == '' || $featured_image_type == 'none') { ?>
               <div class="page-header page-header-standard">
