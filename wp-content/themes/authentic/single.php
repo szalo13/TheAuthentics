@@ -35,10 +35,10 @@
   <?php } ?>
 
   <div class="site-content">
-    <div class="container">
+    <div class="container-fluid">
       <div class="page-content">
         <?php the_sidebar('left'); ?>
-        <div class="main">
+        <div class="main col-sm-11">
 
           <article <?php post_class(); ?>>
 
@@ -106,7 +106,14 @@
             <?php } ?>
 
           </article>
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="page-content">
+        <?php the_sidebar('left'); ?>
+        <div class="main">
           <?php the_prev_next_posts(); ?>
 
           <?php the_related_posts(); ?>
