@@ -443,7 +443,7 @@ Text Domain:          authentic
  * ----------------------------------------------------------------------------
  */
 
-.page-header-bg {
+.overlay-container {
   height: 100vh;
 }
 
@@ -452,7 +452,7 @@ Text Domain:          authentic
   top: 0;
   left: 15px;
   width: 100%;
-  height: 70px;
+  height: 70px !important;
   background-color: black;
 }
 .sticky-wrapper {
