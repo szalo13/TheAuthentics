@@ -6,12 +6,12 @@
 
   $thumbnail = wp_get_attachment_image_src($thumbnail_id, 'hd'); ?>
 
-  <div class="page-header page-header-wide page-header-bg parallax overlay" style="background-image: url(<?php echo $thumbnail[0]; ?>)">
+  <div class="page-header page-header-large page-header-bg overlay parallax" style="background-image: url(<?php echo $thumbnail[0]; ?>)">
     <div class="overlay-container">
       <div class="container">
         <div class="overlay-content">
-          <?php the_post_count(); ?>
-          <?php the_category_title(); ?>
+          <!-- <?php the_post_count(); ?> -->
+          <h1><?php the_category_title(); ?></h1>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
         <?php if(empty($thumbnail_id)) { ?>
         <div class="page-header page-header-archive">
           <?php the_post_count(); ?>
-          <?php the_category_title(); ?>
+          <h1><?php the_category_title_1(); ?></h1>
         </div>
         <?php } ?>
 

@@ -793,6 +793,40 @@ if ( ! function_exists( 'the_category_title' ) ) {
   }
 }
 
+if ( ! function_exists( 'the_category_title_1' ) ) {
+  function the_category_title_1() {
+
+    if ( is_category() ) {
+
+      $count = count( get_categories( array('parent' => 0, 'hide_empty' => 0) ) );
+
+      if ( $count > 1 && !is_subcategory() ) {
+
+        $current = get_category( get_query_var('cat') );
+        $current_id = $current->term_id; ?>
+
+        <ul class="category">
+          <?php wp_list_categories(array('echo' => true, 'current_category' => $current_id, 'title_li' => '', 'order' => 'DESC', 'depth' => 1 )); ?>
+        </ul>
+
+      <?php } else {
+
+        the_page_title();
+
+      }
+
+      if ( category_description() ) {
+      	?>
+      	<div class="category-description">
+      		<?php echo category_description(); ?>
+      	</div>
+      	<?php
+      }
+
+    }
+  }
+}
+
 /**
  * The Related Posts
  */
