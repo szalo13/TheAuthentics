@@ -498,6 +498,12 @@ Text Domain:          authentic
   }
 }
 
+@media (min-width: 768px) {
+  .header-center {
+    height: 100px;
+  }
+}
+
 @media (min-width: 992px) {
   .header-left,
 .header-right,
@@ -543,7 +549,7 @@ Text Domain:          authentic
   }
 
   .sticky-wrapper {
-      position: static;
+      position: absolute;
       top: 100px;
       background-color: rgba(0,0,0,0);
       width: 100%;
