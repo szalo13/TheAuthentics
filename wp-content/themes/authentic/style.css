@@ -613,6 +613,18 @@ Text Domain:          authentic
   max-width: 100%;
 }
 
+@media(min-width: 568px) {
+  .header-logo img {
+    max-width: 300px;
+  }
+}
+
+@media(min-width: 768px) {
+  .header-logo img {
+    max-width: none;
+  }
+}
+
 .header-btn-search {
   font-size: 1.25rem;
   padding: .5rem .75rem;
