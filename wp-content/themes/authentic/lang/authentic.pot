@@ -32,7 +32,7 @@ msgstr ""
 
 #: category.php:37 home.php:142 index.php:15 search.php:15
 msgid "Sorry, no results were found."
-msgstr "Niestety! U nas tego nie znajdziesz ;)"
+msgstr "Pracujemy nad najlepszymi materiałami - daj nam jeszcze trochę czasu! Nie zawiedziesz się ;)"
 
 #: comments.php:17 lib/template-tags.php:495
 msgid "One comment"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: footer.php:135
 msgid "Input your search keywords and press Enter."
-msgstr ""
+msgstr "Wpisz frazę, której szukasz i naciśnij Enter"
 
 #: home.php:101
 msgid "Trending"
@@ -909,7 +909,7 @@ msgstr ""
 
 #: lib/template-tags.php:710
 msgid "View Post"
-msgstr "sprawdzam"
+msgstr "Zobacz więcej"
 
 #: lib/template-tags.php:729
 msgid "posts"
@@ -1412,7 +1412,7 @@ msgstr "Szukaj"
 
 #: searchform.php:4
 msgid "Enter Keyword"
-msgstr ""
+msgstr "Czego szukasz?"
 
 #: searchform.php:6
 msgid "Search"

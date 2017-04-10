@@ -132,7 +132,7 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
           <?php get_search_form(true); ?>
-          <p><?php esc_html_e('Input your search keywords and press Enter.','authentic'); ?></p>
+          <p><?php esc_html_e('Wpisz frazę, której szukasz i naciśnij Enter.','authentic'); ?></p>
         </div>
       </div>
     </div>

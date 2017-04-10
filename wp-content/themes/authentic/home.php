@@ -139,7 +139,7 @@ if($paged == 1) {
 
         <?php if (!have_posts()) { ?>
           <div class="alert alert-warning">
-            <?php esc_html_e('Niestety! U nas tego nie znajdziesz ;)', 'authentic'); ?>
+            <?php esc_html_e('Pracujemy nad najlepszymi materiałami - daj nam jeszcze trochę czasu! Nie zawiedziesz się ;)', 'authentic'); ?>
           </div>
           <?php get_search_form(); ?>
         <?php } ?>

@@ -513,7 +513,7 @@ if ( ! function_exists( 'the_post_reading_time' ) ) {
       $strip_tags = strip_tags($strip_shortcodes);
       $word_count = str_word_count($strip_tags);
       $reading_time = ceil($word_count / 250); ?>
-      
+
       <<?php echo $tag; ?> class="meta-reading-time">
         <?php if ( $compact == true ) { ?><i class="icon icon-clock"></i><?php } ?>
         <?php echo $reading_time;?>
@@ -708,7 +708,7 @@ if ( ! function_exists( 'the_read_more' ) ) {
 
     <div class="post-more">
       <a href="<?php echo $url; ?>" class="<?php echo esc_html($class); ?>">
-        <span><?php esc_html_e('Sprawdzam','authentic');?></span>
+        <span><?php esc_html_e('Zobacz więcej','authentic');?></span>
         <?php if ($icon !== '') { ?>
           <span><i class="icon icon-<?php echo $icon; ?>"></i></span>
         <?php } ?>
