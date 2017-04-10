@@ -1902,6 +1902,11 @@ img {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 768px){
+  .page-header {
+    margin-top: 81px;
+  }
+}
 @media (min-width: 992px) {
   .page-header-bg .overlay-content {
     -ms-flex: 0 0 83.33333%;
